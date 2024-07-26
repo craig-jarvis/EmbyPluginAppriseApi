@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>Emby Notification Plugin for Apprise API</Description>
+    <Description>Emby Notification Plugin for an Apprise API instance</Description>
     <PackageTags>emby;plugin;pms;media;server;apprise;</PackageTags>
   </PropertyGroup>
   <ItemGroup>
@@ -11,7 +11,7 @@
     <EmbeddedResource Include="ThumbImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MediaBrowser.Server.Core" Version="4.8.0.38-beta" />
+    <PackageReference Include="MediaBrowser.Server.Core" Version="4.8.5" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
